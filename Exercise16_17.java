@@ -51,6 +51,18 @@ public class Exercise16_17 extends Application {
         Label opacityLabel  = new Label("Opacity");
 
         // Update text color for slider changes
+        redSlider.valueProperty().addListener((obs, oldVal, newVal) -> {
+            updateColor(text, redSlider, greenSlider, blueSlider, opacitySlider);
+        });
+        greenSlider.valueProperty().addListener((obs, oldVal, newVal) -> {
+            updateColor(text, redSlider, greenSlider, blueSlider, opacitySlider);
+        });
+        blueSlider.valueProperty().addListener((obs, oldVal, newVal) -> {
+            updateColor(text, redSlider, greenSlider, blueSlider, opacitySlider);
+        });
+        opacitySlider.valueProperty().addListener((obs, oldVal, newVal) -> {
+            updateColor(text, redSlider, greenSlider, blueSlider, opacitySlider);
+        });
 
     }
     
