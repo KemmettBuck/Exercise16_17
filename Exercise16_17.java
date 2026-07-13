@@ -7,8 +7,6 @@
  * Course: Java - Ivy Tech Community College
  */
 
-import org.w3c.dom.Text;
-
 import javafx.application.*;
 import javafx.geometry.*;
 import javafx.scene.*;
@@ -81,6 +79,13 @@ public class Exercise16_17 extends Application {
         gridPane.add(opacityLabel,  0,3);
         gridPane.add(opacitySlider, 1,3);
 
+        // Center text at top using BorderPane
+        BorderPane borderPane = new BorderPane();
+        BorderPane.setAlignment(text, Pos.CENTER);
+        BorderPane.setMargin(text, new Insets(20));
+        borderPane.setTop(text);
+        borderPane.setCenter(gridPane);
+
         //create scene and set stage
         Scene scene = new Scene(borderPane, 350, 250);
         primaryStage.setTitle("Exercise16_17");
@@ -91,7 +96,7 @@ public class Exercise16_17 extends Application {
     /** Update text color by current slider */
     private void updateColor(Text text, Slider red, Slider green, 
         Slider blue, Slider opacity) {
-            text.setFill(Color.color)
+            text.setFill(Color.color(
                 red.getValue(),
                 green.getValue(),
                 blue.getValue(),
