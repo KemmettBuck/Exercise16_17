@@ -71,6 +71,16 @@ public class Exercise16_17 extends Application {
         gridPane.setPadding(new Insets(10));
         gridPane.setAlignment(Pos.CENTER);
 
+        // Add labels and sliders (column, row)
+        gridPane.add(redLabel,      0,0);
+        gridPane.add(redSlider,     1,0);
+        gridPane.add(greenLabel,    0,1);
+        gridPane.add(greenSlider,   1,1);
+        gridPane.add(blueLabel,     0,2);
+        gridPane.add(blueSlider,    1,2);
+        gridPane.add(opacityLabel,  0,3);
+        gridPane.add(opacitySlider, 1,3);
+
     }
     
     public static void main(String[] args) {
