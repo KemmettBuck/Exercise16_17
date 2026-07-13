@@ -17,6 +17,16 @@ import javafx.scene.text.*;
 import javafx.stage.*;
 
 public class Exercise16_17 extends Application {
+    @Override
+    public void start(Stage primaryStage) {
+        //Create "Show Colors"
+        Text text = new Text("Show Colors");
+        text.setFont(Font.font("Arial", FontWeight.BOLD, 24));
+        text.setFill(Color.color(0, 0, 0, 1.0)); //default black
+
+        // Sliders for red, green, blue, and opacity
+        
+    }
     
     public static void main(String[] args) {
         launch(args);
