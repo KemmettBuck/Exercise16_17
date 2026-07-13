@@ -45,6 +45,12 @@ public class Exercise16_17 extends Application {
         opacitySlider.setShowTickMarks(true);
 
         // labels for the sliders
+        Label redLabel      = new Label("Red");
+        Label greenLabel    = new Label("Green");
+        Label blueLabel     = new Label("Blue");
+        Label opacityLabel  = new Label("Opacity");
+
+        // Update text color for slider changes
 
     }
     
