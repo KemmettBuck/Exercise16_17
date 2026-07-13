@@ -81,6 +81,22 @@ public class Exercise16_17 extends Application {
         gridPane.add(opacityLabel,  0,3);
         gridPane.add(opacitySlider, 1,3);
 
+        //create scene and set stage
+        Scene scene = new Scene(borderPane, 350, 250);
+        primaryStage.setTitle("Exercise16_17");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    /** Update text color by current slider */
+    private void updateColor(Text text, Slider red, Slider green, 
+        Slider blue, Slider opacity) {
+            text.setFill(Color.color(
+                red.getValue(),
+                green.getValue(),
+                blue.getValue(),
+                opacity.getValue()
+            ));
     }
     
     public static void main(String[] args) {
