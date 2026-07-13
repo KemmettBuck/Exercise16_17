@@ -91,7 +91,7 @@ public class Exercise16_17 extends Application {
     /** Update text color by current slider */
     private void updateColor(Text text, Slider red, Slider green, 
         Slider blue, Slider opacity) {
-            text.setFill(Color.color(
+            text.setFill(Color.color)
                 red.getValue(),
                 green.getValue(),
                 blue.getValue(),
