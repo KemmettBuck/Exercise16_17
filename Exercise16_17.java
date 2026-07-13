@@ -31,6 +31,12 @@ public class Exercise16_17 extends Application {
         Slider greenSlider      = new Slider(0,1,0);
         Slider blueSlider       = new Slider(0,1,0);
         Slider opacitySlider    = new Slider(0,1,1); //default: fully opaque
+
+        //Slider width
+        redSlider.setPrefWidth(200);
+        greenSlider.setPrefWidth(200);
+        blueSlider.setPrefWidth(200);
+        opacitySlider.setPrefWidth(200);
     }
     
     public static void main(String[] args) {
