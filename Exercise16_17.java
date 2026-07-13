@@ -64,6 +64,13 @@ public class Exercise16_17 extends Application {
             updateColor(text, redSlider, greenSlider, blueSlider, opacitySlider);
         });
 
+        // GridPane
+        GridPane gridPane = new GridPane();
+        gridPane.setHgap(10);
+        gridPane.setVgap(10);
+        gridPane.setPadding(new Insets(10));
+        gridPane.setAlignment(Pos.CENTER);
+
     }
     
     public static void main(String[] args) {
