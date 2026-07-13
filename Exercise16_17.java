@@ -37,6 +37,15 @@ public class Exercise16_17 extends Application {
         greenSlider.setPrefWidth(200);
         blueSlider.setPrefWidth(200);
         opacitySlider.setPrefWidth(200);
+
+        // visual markers for sliders using "TickMarks"
+        redSlider.setShowTickMarks(true);
+        greenSlider.setShowTickMarks(true);
+        blueSlider.setShowTickMarks(true);
+        opacitySlider.setShowTickMarks(true);
+
+        // labels for the sliders
+
     }
     
     public static void main(String[] args) {
